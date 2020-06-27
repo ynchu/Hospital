@@ -7,6 +7,8 @@ import java.util.Optional;
 public interface MedicinetableService {
     public Medicinetable createMt(Medicinetable medicinetable);
 
+    Boolean intsert(Medicinetable medicinetable);
+
     public Optional<Medicinetable> getMtByMb(long id);
 
 }

@@ -28,7 +28,7 @@ POST http://localhost:8080/api/v1/exab/save
 Content-Type: application/json
 
 {
-  "id": 6,
+  "id": 9,
   "regId": 2,
   "edate": "2020-06-27"
 }
@@ -38,7 +38,7 @@ POST http://localhost:8080/api/v1/medicinetable/insert
 Content-Type: application/json
 
 {
-  "id": 7,
+  "id": 8,
   "medId": 1,
   "medId2": 1,
   "count": 112

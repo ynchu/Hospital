@@ -19,6 +19,14 @@ public class MedicinetableServiceImpl implements MedicinetableService {
     }
 
     @Override
+    public Boolean intsert(Medicinetable medicinetable) {
+        return repository.insert((int) medicinetable.getId(),
+                (int) medicinetable.getMedId(),
+                (int) medicinetable.getMedId2(),
+                (int) medicinetable.getCount());
+    }
+
+    @Override
     public Optional<Medicinetable> getMtByMb(long id) {
         return repository.findById(id);
     }

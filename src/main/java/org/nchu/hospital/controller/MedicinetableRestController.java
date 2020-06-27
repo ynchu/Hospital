@@ -29,7 +29,6 @@ public class MedicinetableRestController {
     @RequestMapping(value = "/insert", method = RequestMethod.POST, produces = "application/json")
     public Boolean insert(@RequestBody Medicinetable medicinetable) {
         System.out.println("修改");
-        Medicinetable mt = service.createMt(medicinetable);
-        return mt != null;
+        return service.intsert(medicinetable);
     }
 }
