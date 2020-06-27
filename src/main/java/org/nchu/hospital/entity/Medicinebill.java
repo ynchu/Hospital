@@ -5,36 +5,36 @@ import org.springframework.data.relational.core.mapping.Table;
 
 @Table("medicinebill")
 public class Medicinebill {
-  @Id
-  private long id;
-  private long regId;
-  private java.sql.Date mbdate;
+    @Id
+    private long id;
+    private long regId;
+    private java.sql.Date mbdate;
 
 
-  public long getId() {
-    return id;
-  }
+    public long getId() {
+        return id;
+    }
 
-  public void setId(long id) {
-    this.id = id;
-  }
-
-
-  public long getRegId() {
-    return regId;
-  }
-
-  public void setRegId(long regId) {
-    this.regId = regId;
-  }
+    public void setId(long id) {
+        this.id = id;
+    }
 
 
-  public java.sql.Date getMbdate() {
-    return mbdate;
-  }
+    public long getRegId() {
+        return regId;
+    }
 
-  public void setMbdate(java.sql.Date mbdate) {
-    this.mbdate = mbdate;
-  }
+    public void setRegId(long regId) {
+        this.regId = regId;
+    }
+
+
+    public java.sql.Date getMbdate() {
+        return mbdate;
+    }
+
+    public void setMbdate(java.sql.Date mbdate) {
+        this.mbdate = mbdate;
+    }
 
 }

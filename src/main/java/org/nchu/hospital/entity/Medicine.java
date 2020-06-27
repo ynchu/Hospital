@@ -5,66 +5,66 @@ import org.springframework.data.relational.core.mapping.Table;
 
 @Table("medicine")
 public class Medicine {
-  @Id
-  private long id;
-  private String name;
-  private String producer;
-  private java.sql.Date pdate;
-  private double cost;
-  private long stock;
+    @Id
+    private long id;
+    private String name;
+    private String producer;
+    private java.sql.Date pdate;
+    private double cost;
+    private long stock;
 
 
-  public long getId() {
-    return id;
-  }
+    public long getId() {
+        return id;
+    }
 
-  public void setId(long id) {
-    this.id = id;
-  }
-
-
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
+    public void setId(long id) {
+        this.id = id;
+    }
 
 
-  public String getProducer() {
-    return producer;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public void setProducer(String producer) {
-    this.producer = producer;
-  }
-
-
-  public java.sql.Date getPdate() {
-    return pdate;
-  }
-
-  public void setPdate(java.sql.Date pdate) {
-    this.pdate = pdate;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
 
-  public double getCost() {
-    return cost;
-  }
+    public String getProducer() {
+        return producer;
+    }
 
-  public void setCost(double cost) {
-    this.cost = cost;
-  }
+    public void setProducer(String producer) {
+        this.producer = producer;
+    }
 
 
-  public long getStock() {
-    return stock;
-  }
+    public java.sql.Date getPdate() {
+        return pdate;
+    }
 
-  public void setStock(long stock) {
-    this.stock = stock;
-  }
+    public void setPdate(java.sql.Date pdate) {
+        this.pdate = pdate;
+    }
+
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+
+    public long getStock() {
+        return stock;
+    }
+
+    public void setStock(long stock) {
+        this.stock = stock;
+    }
 
 }
