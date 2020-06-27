@@ -1,6 +1,7 @@
 
 POST http://localhost:8080/api/v1/mb/update
 Content-Type: application/json
+
 {
   "id": 6,
   "regId": 2,
@@ -26,6 +27,7 @@ Accept: application/json
 ###
 POST http://localhost:8080/api/v1/exab/update
 Content-Type: application/json
+
 {
   "id": 9,
   "regId": 2,
