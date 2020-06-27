@@ -1,4 +1,5 @@
 use hosptial;
+
 insert into department values (1,'儿科','A201');
 insert into department values (2,'五官科','A202');
 insert into department values (3,'传染科','A203');
