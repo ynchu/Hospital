@@ -1,4 +1,6 @@
-# create database hosptial;
+create database hosptial;
+
+# drop database hosptial;
 
 use hosptial;
 
