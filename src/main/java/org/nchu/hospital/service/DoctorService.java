@@ -3,13 +3,14 @@ package org.nchu.hospital.service;
 import org.nchu.hospital.entity.Doctor;
 
 import java.util.Collection;
+import java.util.Optional;
 
 public interface DoctorService {
-    public Doctor getDoctorById(int id);
+    public Optional<Doctor> getDoctorById(long id);
 
-    public Doctor getDoctorByName(String name);
+    public Optional<Doctor> getDoctorByName(String name);
 
-    public Collection<Doctor> getDoctorByDep(int depId);
+    public Collection<Doctor> getDoctorByDep(long depId);
 
-    public Collection<Doctor> getDoctorByRank(int rankId);
+    public Collection<Doctor> getDoctorByRank(long rankId);
 }
