@@ -2,11 +2,11 @@ package org.nchu.hospital.service;
 
 import org.nchu.hospital.entity.Medicinetable;
 
-import java.util.Collection;
+import java.util.Optional;
 
 public interface MedicinetableService {
-    public boolean createMt(Medicinetable medicinetable);
+    public Medicinetable createMt(Medicinetable medicinetable);
 
-    public Collection<Medicinetable> getMtByMb(int id);
+    public Optional<Medicinetable> getMtByMb(long id);
 
 }
