@@ -12,4 +12,6 @@ public interface ExaminationbillService {
 
     public Examinationbill createExab(Examinationbill exab);
 
+    public boolean createExabs(Examinationbill exab);
+
 }

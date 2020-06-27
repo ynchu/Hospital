@@ -1,5 +1,6 @@
-POST http://localhost:8080/api/v1/mb/update
+POST http://localhost:8080/api/v1/mb/save
 Content-Type: application/json
+
 {
   "id": 6,
   "regId": 2,
@@ -23,8 +24,9 @@ GET http://localhost:8080/api/v1/exab/reg?id=2
 Accept: application/json
 
 ###
-POST http://localhost:8080/api/v1/exab/update
+POST http://localhost:8080/api/v1/exab/save
 Content-Type: application/json
+
 {
   "id": 6,
   "regId": 2,

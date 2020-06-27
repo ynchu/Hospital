@@ -29,4 +29,13 @@ public class ExaminationbillServiceImpl implements ExaminationbillService {
     public Examinationbill createExab(Examinationbill exab) {
         return examinationbillRepository.save(exab);
     }
+
+    @Override
+    public boolean createExabs(Examinationbill exab) {
+        return examinationbillRepository.insert(
+                (int)exab.getId(),
+                (int)exab.getRegId(),
+                exab.getEdate()
+        );
+    }
 }

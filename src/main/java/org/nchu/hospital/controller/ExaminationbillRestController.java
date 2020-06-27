@@ -45,4 +45,12 @@ public class ExaminationbillRestController {
         return exa != null;
     }
 
+    @RequestMapping(value = "/save", method = RequestMethod.POST, produces = "application/json")
+    public Boolean Save(@RequestBody Examinationbill exab) {
+        System.out.println("插入");
+        //Examinationbill exa = examinationbillService.createExab(exab);
+        return examinationbillService.createExabs(exab);
+    }
+
+
 }

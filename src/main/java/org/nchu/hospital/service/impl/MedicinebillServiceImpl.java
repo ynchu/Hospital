@@ -19,6 +19,15 @@ public class MedicinebillServiceImpl implements MedicinebillService {
     }
 
     @Override
+    public boolean createMbs(Medicinebill medicinebill) {
+        return medicinebillRepository.insert(
+                (int)medicinebill.getId(),
+                (int)medicinebill.getRegId(),
+                medicinebill.getMbdate()
+        );
+    }
+
+    @Override
     public Collection<Medicinebill> getMbByReg(long reg) {
         return medicinebillRepository.findByRegId(reg);
     }

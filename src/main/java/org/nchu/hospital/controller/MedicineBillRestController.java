@@ -43,4 +43,11 @@ public class MedicineBillRestController {
         return exa != null;
     }
 
+    @RequestMapping(value = "/save", method = RequestMethod.POST, produces = "application/json")
+    public Boolean save(@RequestBody Medicinebill mb) {
+        System.out.println("插入");
+        //Medicinebill exa = medicinebillService.createMb(mb);
+        return medicinebillService.createMbs(mb);
+    }
+
 }
