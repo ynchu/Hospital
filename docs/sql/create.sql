@@ -1,3 +1,8 @@
+# create database hosptial;
+
+
+use hosptial;
+
 /*==============================================================*/
 /* Table: ranks                                                 */
 /*==============================================================*/
@@ -5,7 +10,7 @@ drop table  if  exists ranks;
 create table ranks
 (
    id                   int                            not null,
-   name                 varchar                        null,
+   name                 varchar(30)                        null,
    constraint PK_RANKS primary key clustered (id)
 );
 
@@ -62,11 +67,11 @@ create table doctor
    id                   int                            not null,
    dep_id               int                            not null,
    ran_id               int                            not null,
-   name                 varchar                        not null,
+   name                 varchar(30)                        not null,
    sex                  int                            not null,
    age                  int                            not null,
-   tel                  varchar                        not null,
-   idnum                varchar                        not null,
+   tel                  varchar(20)                        not null,
+   idnum                varchar(20)                        not null,
    constraint PK_DOCTOR primary key clustered (id),
    foreign key  (dep_id) references department(id),
    foreign key  (ran_id) references ranks(id)
