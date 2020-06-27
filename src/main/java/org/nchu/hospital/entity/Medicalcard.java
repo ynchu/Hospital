@@ -1,17 +1,33 @@
 package org.nchu.hospital.entity;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
+import org.springframework.stereotype.Component;
 
+@Component
 @Table("medicalcard")
 public class Medicalcard {
     @Id
+    @Column(value = "id")
     private long id;
+
+    @Column(value = "name")
     private String name;
+
+    @Column(value = "sex")
     private long sex;
+
+    @Column(value = "age")
     private long age;
+
+    @Column(value = "idnum")
     private String idnum;
+
+    @Column(value = "tel")
     private String tel;
+
+    @Column(value = "balance")
     private double balance;
 
 

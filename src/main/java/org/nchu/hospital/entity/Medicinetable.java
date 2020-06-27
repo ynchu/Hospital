@@ -1,14 +1,24 @@
 package org.nchu.hospital.entity;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
+import org.springframework.stereotype.Component;
 
+@Component
 @Table("medicinetable")
 public class Medicinetable {
     @Id
+    @Column(value = "id")
     private long id;
+
+    @Column(value = "med_id")
     private long medId;
+
+    @Column(value = "med_id2")
     private long medId2;
+
+    @Column(value = "count")
     private long count;
 
 

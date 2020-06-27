@@ -1,15 +1,29 @@
 package org.nchu.hospital.entity;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
+import org.springframework.stereotype.Component;
 
+import java.sql.Date;
+
+@Component
 @Table("registration")
 public class Registration {
     @Id
+    @Column(value = "id")
     private long id;
+
+    @Column(value = "med_id")
     private long medId;
+
+    @Column(value = "doc_id")
     private long docId;
-    private java.sql.Date rdate;
+
+    @Column(value = "rdate")
+    private Date rdate;
+
+    @Column(value = "cost")
     private double cost;
 
 
@@ -40,11 +54,11 @@ public class Registration {
     }
 
 
-    public java.sql.Date getRdate() {
+    public Date getRdate() {
         return rdate;
     }
 
-    public void setRdate(java.sql.Date rdate) {
+    public void setRdate(Date rdate) {
         this.rdate = rdate;
     }
 
