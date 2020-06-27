@@ -4,10 +4,12 @@ import org.nchu.hospital.entity.Examinationbill;
 import org.nchu.hospital.repository.ExaminationbillRepository;
 import org.nchu.hospital.service.ExaminationbillService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.Optional;
 
+@Service
 public class ExaminationbillServiceImpl implements ExaminationbillService {
     @Autowired
     private ExaminationbillRepository examinationbillRepository;

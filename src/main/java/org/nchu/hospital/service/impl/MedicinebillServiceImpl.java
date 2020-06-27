@@ -6,6 +6,7 @@ import org.nchu.hospital.service.MedicinebillService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
 import java.util.Optional;
 
 @Service
@@ -18,7 +19,12 @@ public class MedicinebillServiceImpl implements MedicinebillService {
     }
 
     @Override
-    public Optional<Medicinebill> getMbByReg(long reg) {
-        return medicinebillRepository.findById(reg);
+    public Collection<Medicinebill> getMbByReg(long reg) {
+        return medicinebillRepository.findByRegId(reg);
+    }
+
+    @Override
+    public Optional<Medicinebill> getMbById(long id) {
+        return medicinebillRepository.findById(id);
     }
 }
