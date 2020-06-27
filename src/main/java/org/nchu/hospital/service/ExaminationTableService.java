@@ -2,11 +2,11 @@ package org.nchu.hospital.service;
 
 import org.nchu.hospital.entity.Examinationtable;
 
-import java.util.Collection;
+import java.util.Optional;
 
 public interface ExaminationTableService {
-    public boolean createExat(Examinationtable exat);
+    public Examinationtable createExat(Examinationtable exat);
 
-    public Collection<Examinationtable> getExatByExab(int id);
+    public Optional<Examinationtable> getExatByExab(long id);
 
 }
