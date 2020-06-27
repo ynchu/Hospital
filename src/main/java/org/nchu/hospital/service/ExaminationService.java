@@ -1,6 +1,7 @@
 package org.nchu.hospital.service;
 
 import org.nchu.hospital.entity.Examination;
+import org.nchu.hospital.entity.Examinationbill;
 
 import java.util.Collection;
 import java.util.Optional;
