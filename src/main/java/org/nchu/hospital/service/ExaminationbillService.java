@@ -3,12 +3,13 @@ package org.nchu.hospital.service;
 import org.nchu.hospital.entity.Examinationbill;
 
 import java.util.Collection;
+import java.util.Optional;
 
 public interface ExaminationbillService {
-    public Examinationbill getExabById(int id);
+    public Optional<Examinationbill> getExabById(long id);
 
-    public Collection<Examinationbill> getExabByReg(int reg);
+    public Collection<Examinationbill> getExabByReg(long reg);
 
-    public boolean createExab(Examinationbill exab);
+    public Examinationbill createExab(Examinationbill exab);
 
 }
