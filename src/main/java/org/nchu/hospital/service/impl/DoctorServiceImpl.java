@@ -11,12 +11,9 @@ import java.util.Optional;
 
 @Service
 public class DoctorServiceImpl implements DoctorService {
+    @Autowired
     private DoctorRepository doctorRepository;
 
-    @Autowired
-    public DoctorServiceImpl(DoctorRepository doctorRepository){
-        this.doctorRepository=doctorRepository;
-    }
 
     public Optional<Doctor> getDoctorById(long id) {
         return doctorRepository.findById(id);
@@ -29,11 +26,11 @@ public class DoctorServiceImpl implements DoctorService {
 
     @Override
     public Collection<Doctor> getDoctorByDep(long depId) {
-        return null;
+        return doctorRepository.findDocByDep(depId);
     }
 
     @Override
     public Collection<Doctor> getDoctorByRank(long rankId) {
-        return null;
+        return doctorRepository.findDocByRan(rankId);
     }
 }
