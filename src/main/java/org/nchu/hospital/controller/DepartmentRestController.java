@@ -20,12 +20,11 @@ public class DepartmentRestController {
     private DepartmentService departmentService;
 
     @RequestMapping(value = "", method = RequestMethod.GET, produces = "application/json")
-    public ResponseEntity<Optional<Department>> getAllBookComments(String userId) {
+    public ResponseEntity<Optional<Department>> getDpartmentById(String id) {
         System.out.println("查询评论");
         Optional<Department> departments = Optional.empty();
-        if (userId == null) {
-            assert userId != null;
-            departments = departmentService.getDepartmentById(Long.parseLong(userId));
+        if (id != null) {
+            departments = departmentService.getDepartmentById(Long.parseLong(id));
         }
         return new ResponseEntity<>(departments, HttpStatus.OK);
     }
