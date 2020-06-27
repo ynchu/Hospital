@@ -28,4 +28,13 @@ public class RegistrationServiceImpl implements RegistrationService {
     public Registration createReg(Registration registration) {
         return repository.save(registration);
     }
+
+    @Override
+    public Boolean insert(Registration registration) {
+        return repository.insert((int) registration.getId(),
+                (int) registration.getMedId(),
+                (int) registration.getDocId(),
+                registration.getRdate(),
+                (float) registration.getCost());
+    }
 }

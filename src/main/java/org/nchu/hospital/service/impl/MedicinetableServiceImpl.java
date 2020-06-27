@@ -4,9 +4,11 @@ import org.nchu.hospital.entity.Medicinetable;
 import org.nchu.hospital.repository.MedicinetableRepository;
 import org.nchu.hospital.service.MedicinetableService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 public class MedicinetableServiceImpl implements MedicinetableService {
     @Autowired
     private MedicinetableRepository repository;

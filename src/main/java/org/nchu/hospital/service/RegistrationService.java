@@ -12,4 +12,5 @@ public interface RegistrationService {
 
     public Registration createReg(Registration registration);
 
+    Boolean insert(Registration registration);
 }

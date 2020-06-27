@@ -29,7 +29,6 @@ public class RegistrationRestController {
     @RequestMapping(value = "/update", method = RequestMethod.POST, produces = "application/json")
     public Boolean update(@RequestBody Registration registration) {
         System.out.println("修改");
-        Registration reg = service.createReg(registration);
-        return reg != null;
+        return service.insert(registration);
     }
 }

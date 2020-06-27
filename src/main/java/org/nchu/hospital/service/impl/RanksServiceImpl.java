@@ -4,9 +4,11 @@ import org.nchu.hospital.entity.Ranks;
 import org.nchu.hospital.repository.RanksRepository;
 import org.nchu.hospital.service.RanksService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 public class RanksServiceImpl implements RanksService {
     @Autowired
     private RanksRepository repository;
