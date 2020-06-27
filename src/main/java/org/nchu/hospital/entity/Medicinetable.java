@@ -1,7 +1,11 @@
 package org.nchu.hospital.entity;
 
-public class Medicinetable {
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
+@Table("medicinetable")
+public class Medicinetable {
+  @Id
   private long id;
   private long medId;
   private long medId2;

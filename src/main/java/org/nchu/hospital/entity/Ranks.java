@@ -1,8 +1,11 @@
 package org.nchu.hospital.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
+@Table("ranks")
 public class Ranks {
-
+  @Id
   private long id;
   private String name;
 
