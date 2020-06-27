@@ -1,6 +1,6 @@
-POST http://localhost:8080/api/v1/mb/save
-Content-Type: application/json
 
+POST http://localhost:8080/api/v1/mb/update
+Content-Type: application/json
 {
   "id": 6,
   "regId": 2,
@@ -24,9 +24,8 @@ GET http://localhost:8080/api/v1/exab/reg?id=2
 Accept: application/json
 
 ###
-POST http://localhost:8080/api/v1/exab/save
+POST http://localhost:8080/api/v1/exab/update
 Content-Type: application/json
-
 {
   "id": 9,
   "regId": 2,
@@ -80,6 +79,20 @@ Accept: application/json
 
 ###
 GET http://localhost:8080/api/v1/doctor/dep?id=2
+Accept: application/json
+
+###
+POST http://localhost:8080/api/v1/ExaminationTable/exa
+Content-Type: application/json
+
+{
+  "id": 6,
+  "exaId": 1,
+  "exaId2": 1
+}
+
+###
+GET http://localhost:8080/api/v1/ExaminationTable?id=1
 Accept: application/json
 
 ###

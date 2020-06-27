@@ -13,10 +13,11 @@ import java.util.Optional;
 public class ExaminationTableServiceImpl implements ExaminationTableService {
     @Autowired
     private ExaminationtableRepository examinationtableRepository;
-    @Override
-    public Examinationtable createExat(Examinationtable exat) {
 
-        return examinationtableRepository.save(exat);
+    @Override
+    public Boolean createExat(int id, int exa_id, int exa_id2) {
+
+        return examinationtableRepository.insert(id,exa_id,exa_id2);
     }
 
     @Override

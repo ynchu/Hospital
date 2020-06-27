@@ -5,7 +5,7 @@ import org.nchu.hospital.entity.Examinationtable;
 import java.util.Optional;
 
 public interface ExaminationTableService {
-    public Examinationtable createExat(Examinationtable exat);
+    public Boolean createExat(int id, int exa_id, int exa_id2);
 
     public Optional<Examinationtable> getExatByExab(long id);
 

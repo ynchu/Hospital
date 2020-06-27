@@ -45,4 +45,12 @@ public class Examinationtable {
         this.exaId2 = exaId2;
     }
 
+    @Override
+    public String toString() {
+        return "Examinationtable{" +
+                "id=" + id +
+                ", exaId=" + exaId +
+                ", exaId2=" + exaId2 +
+                '}';
+    }
 }
